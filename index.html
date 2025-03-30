@@ -42,23 +42,42 @@
       <div class="nav-bar">
         <ul class="nav-links text-center">
           <a href="#hero">
-            <li class="nav-item ok">home</li>
+            <li class="nav-item ok" data-lang-key="nav-home">home</li>
           </a>
           <a href="#about">
-            <li class="nav-item">about</li>
+            <li class="nav-item" data-lang-key="nav-about">about</li>
           </a>
           <a href="#founder">
-            <li class="nav-item">founder</li>
+            <li class="nav-item" data-lang-key="nav-founder">founder</li>
           </a>
           <a href="#facilities">
-            <li class="nav-item">facilities</li>
+            <li class="nav-item" data-lang-key="nav-facilities">facilities</li>
           </a>
           <a href="#our-services">
-            <li class="nav-item">our service</li>
+            <li class="nav-item" data-lang-key="nav-services">our service</li>
           </a>
           <a href="#contact">
-            <li class="nav-item">contact</li>
+            <li class="nav-item" data-lang-key="nav-contact">contact</li>
           </a>
+          <div class="language-selector-mobile mt-4 flex justify-center">
+            <div
+              class="bg-white rounded-md shadow-md px-3 py-2 flex items-center"
+            >
+              <a
+                href="#"
+                class="lang-btn px-2 py-1 font-medium text-gray-500 hover:text-primary text-lg"
+                data-lang="id"
+                >ID</a
+              >
+              <span class="text-gray-300 mx-2">|</span>
+              <a
+                href="#"
+                class="lang-btn active px-2 py-1 font-medium text-primary text-lg"
+                data-lang="en"
+                >EN</a
+              >
+            </div>
+          </div>
         </ul>
       </div>
     </div>
@@ -67,17 +86,40 @@
         <h1
           class="tracking-wider capitalize text-3xl md:text-5xl font-extrabold text-primary filter drop-shadow-2xl w-max"
         >
-          <a href="#"> Eliksir Medika</a>
+          <a href="#">
+            <img
+              src="assets/images/logo-horizontal.png"
+              alt="Eliksir Medika Logo"
+              class="w-32 md:w-48 lg:w-64"
+            />
+          </a>
         </h1>
       </div>
-      <div class="fixed top-6 right-8 z-50">
-        <a href="#" id="navAction">
+      <div class="fixed top-3 right-8 z-50 flex items-center">
+        <div
+          class="language-selector mr-5 bg-white rounded-md shadow-md px-2 py-1 xl:flex hidden items-center"
+        >
+          <a
+            href="#"
+            class="lang-btn px-2 py-1 font-medium text-gray-500 hover:text-primary"
+            data-lang="id"
+            >ID</a
+          >
+          <span class="text-gray-300 mx-1">|</span>
+          <a
+            href="#"
+            class="lang-btn active px-2 py-1 font-medium text-primary"
+            data-lang="en"
+            >EN</a
+          >
+        </div>
+        <div id="navAction" class="cursor-pointer">
           <span
             class="material-icons text-4xl sm:text-5xl lg:text-6xl bg-white"
           >
             apps
           </span>
-        </a>
+        </div>
       </div>
     </nav>
 
@@ -94,19 +136,20 @@
             <h1
               class="text-4xl md:text-5xl lg:text-6xl xl:text-7xl xl:leading-tight lg:leading-none capitalize"
             >
-              BEYOND CARE
+              <span>BEYOND CARE</span>
               <br />
               <span class="text-primary-dark font-extrabold"
                 >BEYOND HEALING</span
               >
             </h1>
-            <p class="w-4/5 text-gray-700 text-xs md:text-sm tracking-wide">
-              Qualified Staff With Expertise in Services.We Offer for more
-              Resonable cost with love
-            </p>
+            <p
+              class="w-4/5 text-gray-700 text-xs md:text-sm tracking-wide"
+              data-lang-key="hero-subtitle"
+            ></p>
             <a
               href="#contact"
               class="capitalize tracking-wider inline-block px-5 py-3 bg-primary text-white shadow-lg"
+              data-lang-key="hero-btn"
               >contact us</a
             >
           </div>
@@ -132,7 +175,7 @@
     </section>
     <section class="about mb-10" id="about">
       <div
-        class="flex flex-col-reverse items-center px-5 md:px-8 lg:grid grid-cols-2 lg:p-0"
+        class="flex flex-col-reverse items-center px-5 md:px-8 lg:grid grid-cols-2 lg:p-0 gap-6"
       >
         <div
           class="about-img-container relative wow animate__animated animate__fadeIn"
@@ -154,13 +197,16 @@
             >
               about
             </h1>
-            <h1 class="section-heading">about us</h1>
+            <h1 class="section-heading" data-lang-key="about-heading">
+              about us
+            </h1>
           </div>
           <div
             class="hidden lg:block my-4 border-b-4 w-80 border-primary"
           ></div>
           <p
             class="my-3 text-justify text-gray-800 text-sm tracking-wide leading-7"
+            data-lang-key="about-text"
           >
             PT Hiyakari Bakti Utama is a leading healthcare company committed to
             excellence in medical services. Under our premier brand, Eliksir
@@ -198,10 +244,13 @@
             <h1
               class="absolute text-5xl md:text-7xl lg:text-8xl tracking-wider uppercase font-extrabold w-full h-full text-gray-200"
               style="z-index: -1"
+              data-lang-key="founder-title"
             >
               founder
             </h1>
-            <h1 class="section-heading">our founder</h1>
+            <h1 class="section-heading" data-lang-key="founder-heading">
+              our founder
+            </h1>
           </div>
           <div
             class="hidden lg:block my-4 border-b-4 w-80 border-primary mx-auto"
@@ -263,16 +312,20 @@
             <h1
               class="absolute text-5xl md:text-7xl lg:text-8xl tracking-wider uppercase font-extrabold w-full h-full text-gray-200"
               style="z-index: -1"
+              data-lang-key="facilities-heading"
             >
               facilities
             </h1>
-            <h1 class="section-heading">facilities</h1>
+            <h1 class="section-heading" data-lang-key="facilities-heading">
+              facilities
+            </h1>
           </div>
           <div
             class="hidden lg:block border-b-4 w-80 my-4 border-primary"
           ></div>
           <p
             class="my-3 text-justify text-gray-800 text-sm tracking-wide leading-7"
+            data-lang-key="facilities-text"
           >
             Our facility is designed to provide a comfortable and efficient
             environment for patients and staff. With modern amenities and
@@ -300,8 +353,16 @@
               >
             </div>
             <div class="col-span-2 text-sm space-y-3">
-              <h1 class="text-2xl capitalize text-white">Consultation Room</h1>
-              <p class="text-xs text-gray-200 tracking-wider leading-6">
+              <h1
+                class="text-2xl capitalize text-white"
+                data-lang-key="consultation-room"
+              >
+                Consultation Room
+              </h1>
+              <p
+                class="text-xs text-gray-200 tracking-wider leading-6"
+                data-lang-key="consultation-desc"
+              >
                 We have well furnished consultation room with all the
                 facilities. The room is well equipped with all the necessary
                 instruments and machines.
@@ -318,8 +379,16 @@
               >
             </div>
             <div class="col-span-2 text-sm space-y-3">
-              <h1 class="text-2xl capitalize text-white">Reception Room</h1>
-              <p class="text-xs text-gray-200 tracking-wider leading-6">
+              <h1
+                class="text-2xl capitalize text-white"
+                data-lang-key="reception-room"
+              >
+                Reception Room
+              </h1>
+              <p
+                class="text-xs text-gray-200 tracking-wider leading-6"
+                data-lang-key="reception-desc"
+              >
                 We have well furnished reception room with all the facilities.
                 The room is well equipped with all the necessary instruments and
                 machines.
@@ -336,10 +405,16 @@
               >
             </div>
             <div class="col-span-2 text-sm space-y-3">
-              <h1 class="text-2xl capitalize text-white">
+              <h1
+                class="text-2xl capitalize text-white"
+                data-lang-key="medical-record"
+              >
                 Medical Record Room
               </h1>
-              <p class="text-xs text-gray-200 tracking-wider leading-6">
+              <p
+                class="text-xs text-gray-200 tracking-wider leading-6"
+                data-lang-key="medical-record-desc"
+              >
                 Our modern medical record room combines digital and physical
                 storage systems to securely manage patient information. With
                 strict privacy protocols and efficient organization, we ensure
@@ -358,8 +433,16 @@
               >
             </div>
             <div class="col-span-2 text-sm space-y-3">
-              <h1 class="text-2xl capitalize text-white">Waiting Room</h1>
-              <p class="text-xs text-gray-200 tracking-wider leading-6">
+              <h1
+                class="text-2xl capitalize text-white"
+                data-lang-key="waiting-room"
+              >
+                Waiting Room
+              </h1>
+              <p
+                class="text-xs text-gray-200 tracking-wider leading-6"
+                data-lang-key="waiting-desc"
+              >
                 Our waiting room is designed for comfort and convenience, with
                 spacious seating, calming decor, and amenities like Wi-Fi and
                 refreshments. We prioritize patient comfort while they await
@@ -377,8 +460,16 @@
               >
             </div>
             <div class="col-span-2 text-sm space-y-3">
-              <h1 class="text-2xl capitalize text-white">Laboratory</h1>
-              <p class="text-xs text-gray-200 tracking-wider leading-6">
+              <h1
+                class="text-2xl capitalize text-white"
+                data-lang-key="laboratory"
+              >
+                Laboratory
+              </h1>
+              <p
+                class="text-xs text-gray-200 tracking-wider leading-6"
+                data-lang-key="laboratory-desc"
+              >
                 Our laboratory is equipped with advanced diagnostic tools and
                 staffed by skilled professionals. We offer a wide range of
                 tests, ensuring accurate and timely results for effective
@@ -396,8 +487,16 @@
               >
             </div>
             <div class="col-span-2 text-sm space-y-3">
-              <h1 class="text-2xl capitalize text-white">Emergency Room</h1>
-              <p class="text-xs text-gray-200 tracking-wider leading-6">
+              <h1
+                class="text-2xl capitalize text-white"
+                data-lang-key="emergency"
+              >
+                Emergency Room
+              </h1>
+              <p
+                class="text-xs text-gray-200 tracking-wider leading-6"
+                data-lang-key="emergency-desc"
+              >
                 Our emergency room is equipped to handle critical situations
                 with speed and precision. Staffed by experienced professionals,
                 we provide immediate care and advanced life-saving interventions
@@ -415,8 +514,16 @@
               >
             </div>
             <div class="col-span-2 text-sm space-y-3">
-              <h1 class="text-2xl capitalize text-white">Pharmacy</h1>
-              <p class="text-xs text-gray-200 tracking-wider leading-6">
+              <h1
+                class="text-2xl capitalize text-white"
+                data-lang-key="pharmacy"
+              >
+                Pharmacy
+              </h1>
+              <p
+                class="text-xs text-gray-200 tracking-wider leading-6"
+                data-lang-key="pharmacy-desc"
+              >
                 Our pharmacy is dedicated to providing safe and effective
                 medications. With a team of licensed pharmacists, we ensure
                 accurate dispensing, patient counseling, and medication
@@ -434,10 +541,16 @@
               >
             </div>
             <div class="col-span-2 text-sm space-y-3">
-              <h1 class="text-2xl capitalize text-white">
+              <h1
+                class="text-2xl capitalize text-white"
+                data-lang-key="parking"
+              >
                 Car and Motorcycle Parking
               </h1>
-              <p class="text-xs text-gray-200 tracking-wider leading-6">
+              <p
+                class="text-xs text-gray-200 tracking-wider leading-6"
+                data-lang-key="parking-desc"
+              >
                 Our facility offers secure car and motorcycle parking for
                 patients and visitors. With ample space and safety measures in
                 place, we ensure peace of mind while you focus on your health.
@@ -455,10 +568,13 @@
               >
             </div>
             <div class="col-span-2 text-sm space-y-3">
-              <h1 class="text-2xl capitalize text-white">
+              <h1 class="text-2xl capitalize text-white" data-lang-key="wifi">
                 Free Wi Fi & Cable TV
               </h1>
-              <p class="text-xs text-gray-200 tracking-wider leading-6">
+              <p
+                class="text-xs text-gray-200 tracking-wider leading-6"
+                data-lang-key="wifi-desc"
+              >
                 Our facility offers complimentary Wi-Fi and cable TV for
                 patients and visitors. Stay connected and entertained during
                 your visit, ensuring a comfortable and enjoyable experience.
@@ -475,8 +591,16 @@
               >
             </div>
             <div class="col-span-2 text-sm space-y-3">
-              <h1 class="text-2xl capitalize text-white">Bathroom</h1>
-              <p class="text-xs text-gray-200 tracking-wider leading-6">
+              <h1
+                class="text-2xl capitalize text-white"
+                data-lang-key="bathroom"
+              >
+                Bathroom
+              </h1>
+              <p
+                class="text-xs text-gray-200 tracking-wider leading-6"
+                data-lang-key="bathroom-desc"
+              >
                 Our facility features clean and accessible bathrooms for the
                 comfort of our patients and visitors. Designed with hygiene and
                 convenience in mind, they ensure a pleasant experience during
@@ -494,8 +618,16 @@
               >
             </div>
             <div class="col-span-2 text-sm space-y-3">
-              <h1 class="text-2xl capitalize text-white">Mushalla</h1>
-              <p class="text-xs text-gray-200 tracking-wider leading-6">
+              <h1
+                class="text-2xl capitalize text-white"
+                data-lang-key="mushalla"
+              >
+                Mushalla
+              </h1>
+              <p
+                class="text-xs text-gray-200 tracking-wider leading-6"
+                data-lang-key="mushalla-desc"
+              >
                 Our facility includes a dedicated mushalla for prayer and
                 reflection. Designed to provide a serene environment, it offers
                 a peaceful space for spiritual practices during your visit.
@@ -517,15 +649,21 @@
             <h1
               class="absolute text-5xl md:text-7xl lg:text-8xl tracking-wider uppercase font-extrabold w-full h-full text-gray-200"
               style="z-index: -1"
+              data-lang-key="services-title"
             >
               services
             </h1>
-            <h1 class="section-heading">our services</h1>
+            <h1 class="section-heading" data-lang-key="services-heading">
+              our services
+            </h1>
           </div>
           <div
             class="hidden lg:block border-b-4 w-80 my-4 border-primary"
           ></div>
-          <p class="text-gray-800 text-sm tracking-wide leading-7 mb-4">
+          <p
+            class="text-gray-800 text-sm tracking-wide leading-7 mb-4"
+            data-lang-key="services-text"
+          >
             We provide comprehensive healthcare services tailored to meet your
             needs. Our team of professionals is dedicated to delivering quality
             care with compassion and expertise.
@@ -545,7 +683,9 @@
               <span class="material-icons text-white text-4xl mr-4"
                 >medical_services</span
               >
-              <h3 class="text-xl font-bold text-white">General Practitioner</h3>
+              <h3 class="text-xl font-bold text-white" data-lang-key="gp">
+                General Practitioner
+              </h3>
             </div>
             <div class="service-card-body p-5">
               <ul class="service-list">
@@ -553,7 +693,7 @@
                   <span class="material-icons text-primary mr-2 text-sm"
                     >check_circle</span
                   >
-                  <span class="text-sm"
+                  <span class="text-sm" data-lang-key="gp-service1"
                     >Consultation, counseling, and general physical health
                     examination</span
                   >
@@ -562,7 +702,7 @@
                   <span class="material-icons text-primary mr-2 text-sm"
                     >check_circle</span
                   >
-                  <span class="text-sm"
+                  <span class="text-sm" data-lang-key="gp-service2"
                     >Vaccines (Mandatory childhood vaccines, HPV, Influenza,
                     meningitis)</span
                   >
@@ -571,19 +711,25 @@
                   <span class="material-icons text-primary mr-2 text-sm"
                     >check_circle</span
                   >
-                  <span class="text-sm">Vitamin infusion</span>
+                  <span class="text-sm" data-lang-key="gp-service3"
+                    >Vitamin infusion</span
+                  >
                 </li>
                 <li class="flex items-start mb-3">
                   <span class="material-icons text-primary mr-2 text-sm"
                     >check_circle</span
                   >
-                  <span class="text-sm">Emergency</span>
+                  <span class="text-sm" data-lang-key="gp-service4"
+                    >Emergency</span
+                  >
                 </li>
                 <li class="flex items-start mb-3">
                   <span class="material-icons text-primary mr-2 text-sm"
                     >check_circle</span
                   >
-                  <span class="text-sm">Circumcision</span>
+                  <span class="text-sm" data-lang-key="gp-service5"
+                    >Circumcision</span
+                  >
                 </li>
               </ul>
             </div>
@@ -593,13 +739,16 @@
           <div
             class="service-card bg-white rounded-lg shadow-lg overflow-hidden wow animate__animated animate__fadeIn"
           >
-            <div
-              class="service-card-header bg-primary-dark p-4 flex items-center"
-            >
+            <div class="service-card-header bg-primary p-4 flex items-center">
               <span class="material-icons text-white text-4xl mr-4"
                 >psychology</span
               >
-              <h3 class="text-xl font-bold text-white">Specialists</h3>
+              <h3
+                class="text-xl font-bold text-white"
+                data-lang-key="specialists"
+              >
+                Specialists
+              </h3>
             </div>
             <div class="service-card-body p-5">
               <ul class="service-list">
@@ -607,19 +756,25 @@
                   <span class="material-icons text-primary mr-2 text-sm"
                     >check_circle</span
                   >
-                  <span class="text-sm">Internist</span>
+                  <span class="text-sm" data-lang-key="specialists-service1"
+                    >Internist</span
+                  >
                 </li>
                 <li class="flex items-start mb-3">
                   <span class="material-icons text-primary mr-2 text-sm"
                     >check_circle</span
                   >
-                  <span class="text-sm">Neurologist</span>
+                  <span class="text-sm" data-lang-key="specialists-service2"
+                    >Neurologist</span
+                  >
                 </li>
                 <li class="flex items-start mb-3">
                   <span class="material-icons text-primary mr-2 text-sm"
                     >check_circle</span
                   >
-                  <span class="text-sm">Primary care for family</span>
+                  <span class="text-sm" data-lang-key="specialists-service3"
+                    >Primary care for family</span
+                  >
                 </li>
               </ul>
             </div>
@@ -633,7 +788,9 @@
               <span class="material-icons text-white text-4xl mr-4"
                 >biotech</span
               >
-              <h3 class="text-xl font-bold text-white">Laboratory</h3>
+              <h3 class="text-xl font-bold text-white" data-lang-key="lab">
+                Laboratory
+              </h3>
             </div>
             <div class="service-card-body p-5">
               <ul class="service-list">
@@ -641,55 +798,73 @@
                   <span class="material-icons text-primary mr-2 text-sm"
                     >check_circle</span
                   >
-                  <span class="text-sm">Clinical Hematology</span>
+                  <span class="text-sm" data-lang-key="lab-service1"
+                    >Clinical Hematology</span
+                  >
                 </li>
                 <li class="flex items-start mb-3">
                   <span class="material-icons text-primary mr-2 text-sm"
                     >check_circle</span
                   >
-                  <span class="text-sm">Clinical chemistry</span>
+                  <span class="text-sm" data-lang-key="lab-service2"
+                    >Clinical chemistry</span
+                  >
                 </li>
                 <li class="flex items-start mb-3">
                   <span class="material-icons text-primary mr-2 text-sm"
                     >check_circle</span
                   >
-                  <span class="text-sm">Complete blood test</span>
+                  <span class="text-sm" data-lang-key="lab-service3"
+                    >Complete blood test</span
+                  >
                 </li>
                 <li class="flex items-start mb-3">
                   <span class="material-icons text-primary mr-2 text-sm"
                     >check_circle</span
                   >
-                  <span class="text-sm">Blood group test</span>
+                  <span class="text-sm" data-lang-key="lab-service4"
+                    >Blood group test</span
+                  >
                 </li>
                 <li class="flex items-start mb-3">
                   <span class="material-icons text-primary mr-2 text-sm"
                     >check_circle</span
                   >
-                  <span class="text-sm">ESRD test</span>
+                  <span class="text-sm" data-lang-key="lab-service5"
+                    >ESRD test</span
+                  >
                 </li>
                 <li class="flex items-start mb-3">
                   <span class="material-icons text-primary mr-2 text-sm"
                     >check_circle</span
                   >
-                  <span class="text-sm">Malaria screening</span>
+                  <span class="text-sm" data-lang-key="lab-service6"
+                    >Malaria screening</span
+                  >
                 </li>
                 <li class="flex items-start mb-3">
                   <span class="material-icons text-primary mr-2 text-sm"
                     >check_circle</span
                   >
-                  <span class="text-sm">Urinalysis</span>
+                  <span class="text-sm" data-lang-key="lab-service7"
+                    >Urinalysis</span
+                  >
                 </li>
                 <li class="flex items-start mb-3">
                   <span class="material-icons text-primary mr-2 text-sm"
                     >check_circle</span
                   >
-                  <span class="text-sm">Stool Examination</span>
+                  <span class="text-sm" data-lang-key="lab-service8"
+                    >Stool Examination</span
+                  >
                 </li>
                 <li class="flex items-start mb-3">
                   <span class="material-icons text-primary mr-2 text-sm"
                     >check_circle</span
                   >
-                  <span class="text-sm">Pregnancy Test Screening</span>
+                  <span class="text-sm" data-lang-key="lab-service9"
+                    >Pregnancy Test Screening</span
+                  >
                 </li>
               </ul>
             </div>
@@ -704,12 +879,17 @@
                 class="service-card bg-white rounded-lg shadow-lg overflow-hidden wow animate__animated animate__fadeIn"
               >
                 <div
-                  class="service-card-header bg-primary-dark p-4 flex items-center"
+                  class="service-card-header bg-primary p-4 flex items-center"
                 >
                   <span class="material-icons text-white text-4xl mr-4"
                     >home</span
                   >
-                  <h3 class="text-xl font-bold text-white">Home Service</h3>
+                  <h3
+                    class="text-xl font-bold text-white"
+                    data-lang-key="home-service"
+                  >
+                    Home Service
+                  </h3>
                 </div>
                 <div class="service-card-body p-5">
                   <ul class="service-list">
@@ -717,13 +897,17 @@
                       <span class="material-icons text-primary mr-2 text-sm"
                         >check_circle</span
                       >
-                      <span class="text-sm">Dokter panggilan</span>
+                      <span class="text-sm" data-lang-key="home-service1"
+                        >Dokter panggilan</span
+                      >
                     </li>
                     <li class="flex items-start mb-3">
                       <span class="material-icons text-primary mr-2 text-sm"
                         >check_circle</span
                       >
-                      <span class="text-sm">Perawat panggilan</span>
+                      <span class="text-sm" data-lang-key="home-service2"
+                        >Perawat panggilan</span
+                      >
                     </li>
                   </ul>
                 </div>
@@ -741,7 +925,12 @@
                   <span class="material-icons text-white text-4xl mr-4"
                     >medication</span
                   >
-                  <h3 class="text-xl font-bold text-white">Apotek</h3>
+                  <h3
+                    class="text-xl font-bold text-white"
+                    data-lang-key="apotek"
+                  >
+                    Apotek
+                  </h3>
                 </div>
                 <div class="service-card-body p-5">
                   <ul class="service-list">
@@ -749,7 +938,7 @@
                       <span class="material-icons text-primary mr-2 text-sm"
                         >check_circle</span
                       >
-                      <span class="text-sm"
+                      <span class="text-sm" data-lang-key="apotek-service"
                         >Pengkajian dan pelayanan resep</span
                       >
                     </li>
@@ -771,10 +960,13 @@
             <h1
               class="absolute text-5xl md:text-7xl lg:text-8xl tracking-wider uppercase font-extrabold w-full h-full text-gray-200"
               style="z-index: -1"
+              data-lang-key="contact-title"
             >
               contact
             </h1>
-            <h1 class="section-heading">contact us</h1>
+            <h1 class="section-heading" data-lang-key="contact-heading">
+              contact us
+            </h1>
           </div>
           <div
             class="hidden lg:block border-b-4 w-80 my-4 border-primary"
@@ -809,8 +1001,9 @@
           class="relative flex flex-col justify-center overflow-hidden border-2 border-black rounded-lg wow animate__animated animate__fadeIn shadow-2xl"
         >
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.840031564716!2d107.02008247475816!3d-6.908704667673471!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e693b241b726d67%3A0x401576d14fedf41!2sKarawang%2C%20West%20Java!5e0!3m2!1sen!2sid!4v1649326180478!5m2!1sen!2sid"
+            src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3965.3669987429575!2d107.30092507499147!3d-6.346499993643324!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNsKwMjAnNDcuNCJTIDEwN8KwMTgnMTIuNiJF!5e0!3m2!1sid!2sid!4v1743258475771!5m2!1sid!2sid"
             allowfullscreen=""
+            referrerpolicy="no-referrer-when-downgrade"
             loading="lazy"
             class="w-auto h-96 lg:h-full"
           ></iframe>
@@ -830,5 +1023,274 @@
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
     <script src="assets/js/main.js"></script>
+    <script>
+      // Language switcher functionality
+      document.addEventListener("DOMContentLoaded", function () {
+        // Translations object
+        const translations = {
+          en: {
+            // Navigation
+            "nav-home": "home",
+            "nav-about": "about",
+            "nav-founder": "founder",
+            "nav-facilities": "facilities",
+            "nav-services": "our service",
+            "nav-contact": "contact",
+
+            // Hero section
+            "hero-title1": "BEYOND CARE",
+            "hero-title2": "BEYOND HEALING",
+            "hero-subtitle":
+              "Qualified Staff With Expertise in Services. We Offer for more Reasonable cost with love",
+            "hero-btn": "contact us",
+
+            // About section
+            "about-heading": "about us",
+            "about-text":
+              "PT Hiyakari Bakti Utama is a leading healthcare company committed to excellence in medical services. Under our premier brand, Eliksir Medikka we deliver a premier healthcare clinic dedicated to providing exceptional medical services with a commitment to excellence, innovation, and personalized care. Our mission is to redefine healthcare by combining advanced medical expertise with a patient-centered approach, ensuring every individual receives comprehensive, high-quality treatment tailored to their needs.<br><br>With a focus on precision diagnostics, cutting-edge treatments, and holistic wellness, Eliksir Medikka stands as a trusted partner in health, offering a seamless experience that prioritizes comfort, care, and long-term well-being. Our team of highly skilled professionals is dedicated to delivering world-class medical solutions, ensuring that health and elegance go hand in hand.<br><br>At Eliksir Medikka, we believe that healthcare is more than just treatment—it is about empowering lives, enhancing vitality, and inspiring confidence. Experience the future of affordable and decent healthcare for the community with us.",
+
+            // Founder section
+            "founder-heading": "our founder",
+            "founder-title": "Founder",
+            "founder-role": "Chief Executive Officer",
+            "cofounder-title": "Co-Founder",
+            "cofounder-role": "Chief Operation Officer",
+
+            // Facilities section
+            "facilities-heading": "facilities",
+            "facilities-text":
+              "Our facility is designed to provide a comfortable and efficient environment for patients and staff. With modern amenities and advanced technology, we ensure the highest standards of care. From spacious waiting areas to well-equipped treatment rooms, every aspect of our facility is tailored to enhance the patient experience. We prioritize safety, accessibility, and convenience, making your visit as smooth as possible.",
+            "consultation-room": "Consultation Room",
+            "consultation-desc":
+              "We have well furnished consultation room with all the facilities. The room is well equipped with all the necessary instruments and machines.",
+            "reception-room": "Reception Room",
+            "reception-desc":
+              "We have well furnished reception room with all the facilities. The room is well equipped with all the necessary instruments and machines.",
+            "medical-record": "Medical Record Room",
+            "medical-record-desc":
+              "Our modern medical record room combines digital and physical storage systems to securely manage patient information. With strict privacy protocols and efficient organization, we ensure seamless access to medical histories for coordinated patient care.",
+            "waiting-room": "Waiting Room",
+            "waiting-desc":
+              "Our waiting room is designed for comfort and convenience, with spacious seating, calming decor, and amenities like Wi-Fi and refreshments. We prioritize patient comfort while they await appointments or procedures.",
+            laboratory: "Laboratory",
+            "laboratory-desc":
+              "Our laboratory is equipped with advanced diagnostic tools and staffed by skilled professionals. We offer a wide range of tests, ensuring accurate and timely results for effective patient care.",
+            emergency: "Emergency Room",
+            "emergency-desc":
+              "Our emergency room is equipped to handle critical situations with speed and precision. Staffed by experienced professionals, we provide immediate care and advanced life-saving interventions for all emergencies.",
+            pharmacy: "Pharmacy",
+            "pharmacy-desc":
+              "Our pharmacy is dedicated to providing safe and effective medications. With a team of licensed pharmacists, we ensure accurate dispensing, patient counseling, and medication management for optimal health outcomes.",
+            parking: "Car and Motorcycle Parking",
+            "parking-desc":
+              "Our facility offers secure car and motorcycle parking for patients and visitors. With ample space and safety measures in place, we ensure peace of mind while you focus on your health.",
+            wifi: "Free Wi Fi & Cable TV",
+            "wifi-desc":
+              "Our facility offers complimentary Wi-Fi and cable TV for patients and visitors. Stay connected and entertained during your visit, ensuring a comfortable and enjoyable experience.",
+            bathroom: "Bathroom",
+            "bathroom-desc":
+              "Our facility features clean and accessible bathrooms for the comfort of our patients and visitors. Designed with hygiene and convenience in mind, they ensure a pleasant experience during your visit.",
+            mushalla: "Mushalla",
+            "mushalla-desc":
+              "Our facility includes a dedicated mushalla for prayer and reflection. Designed to provide a serene environment, it offers a peaceful space for spiritual practices during your visit.",
+
+            // Services section
+            "services-heading": "our services",
+            "service-title": "services",
+            "services-text":
+              "We provide comprehensive healthcare services tailored to meet your needs. Our team of professionals is dedicated to delivering quality care with compassion and expertise.",
+            gp: "General Practitioner",
+            "gp-service1":
+              "Consultation, counseling, and general physical health examination",
+            "gp-service2":
+              "Vaccines (Mandatory childhood vaccines, HPV, Influenza, meningitis)",
+            "gp-service3": "Vitamin infusion",
+            "gp-service4": "Emergency",
+            "gp-service5": "Circumcision",
+            specialists: "Specialists",
+            "specialists-service1": "Internist",
+            "specialists-service2": "Neurologist",
+            "specialists-service3": "Primary care for family",
+            lab: "Laboratory",
+            "lab-service1": "Clinical Hematology",
+            "lab-service2": "Clinical chemistry",
+            "lab-service3": "Complete blood test",
+            "lab-service4": "Blood group test",
+            "lab-service5": "ESRD test",
+            "lab-service6": "Malaria screening",
+            "lab-service7": "Urinalysis",
+            "lab-service8": "Stool Examination",
+            "lab-service9": "Pregnancy Test Screening",
+            "home-service": "Home Service",
+            "home-service1": "On-call doctor",
+            "home-service2": "On-call nurse",
+            apotek: "Pharmacy",
+            "apotek-service": "Prescription assessment and service",
+
+            // Contact section
+            "contact-heading": "contact us",
+            "contact-title": "contact",
+            copyright:
+              "Copyright © PT Hiyakari Bakti Utama. All rights reserved.",
+          },
+          id: {
+            // Navigation
+            "nav-home": "beranda",
+            "nav-about": "tentang",
+            "nav-founder": "pendiri",
+            "nav-facilities": "fasilitas",
+            "nav-services": "layanan kami",
+            "nav-contact": "kontak",
+
+            // Hero section
+            "hero-title1": "MELAMPAUI PERAWATAN",
+            "hero-title2": "MELAMPAUI PENYEMBUHAN",
+            "hero-subtitle":
+              "Staf Berkualitas Dengan Keahlian dalam Layanan. Kami Menawarkan dengan biaya yang Wajar dan penuh kasih",
+            "hero-btn": "hubungi kami",
+
+            // About section
+            "about-heading": "tentang kami",
+            "about-text":
+              "PT Hiyakari Bakti Utama adalah perusahaan layanan kesehatan terkemuka yang berkomitmen pada keunggulan dalam layanan medis. Di bawah merek utama kami, Eliksir Medikka, kami menghadirkan klinik kesehatan premier yang didedikasikan untuk memberikan layanan medis luar biasa dengan komitmen terhadap keunggulan, inovasi, dan perawatan yang dipersonalisasi. Misi kami adalah mendefinisikan ulang layanan kesehatan dengan menggabungkan keahlian medis tingkat lanjut dengan pendekatan yang berpusat pada pasien, memastikan setiap individu menerima perawatan komprehensif dan berkualitas tinggi yang disesuaikan dengan kebutuhannya.<br><br>Dengan fokus pada diagnostik presisi, perawatan mutakhir, dan kesehatan holistik, Eliksir Medikka hadir sebagai mitra terpercaya dalam kesehatan, menawarkan pengalaman yang lancar yang memprioritaskan kenyamanan, perawatan, dan kesejahteraan jangka panjang. Tim profesional kami yang sangat terampil berdedikasi untuk memberikan solusi medis kelas dunia, memastikan bahwa kesehatan dan keanggunan berjalan seiring.<br><br>Di Eliksir Medikka, kami percaya bahwa layanan kesehatan lebih dari sekadar pengobatan—ini tentang memberdayakan kehidupan, meningkatkan vitalitas, dan menginspirasi kepercayaan diri. Rasakan masa depan layanan kesehatan yang terjangkau dan layak untuk masyarakat bersama kami.",
+
+            // Founder section
+            "founder-heading": "pendiri kami",
+            "founder-title": "Pendiri",
+            "founder-role": "Direktur Utama",
+            "cofounder-title": "Ko-Pendiri",
+            "cofounder-role": "Direktur Operasional",
+
+            // Facilities section
+            "facilities-heading": "fasilitas",
+            "facilities-text":
+              "Fasilitas kami dirancang untuk memberikan lingkungan yang nyaman dan efisien bagi pasien dan staf. Dengan fasilitas modern dan teknologi canggih, kami memastikan standar perawatan tertinggi. Dari ruang tunggu yang luas hingga ruang perawatan yang dilengkapi dengan baik, setiap aspek fasilitas kami disesuaikan untuk meningkatkan pengalaman pasien. Kami memprioritaskan keamanan, aksesibilitas, dan kenyamanan, membuat kunjungan Anda semulus mungkin.",
+            "consultation-room": "Ruang Konsultasi",
+            "consultation-desc":
+              "Kami memiliki ruang konsultasi yang dilengkapi dengan baik dengan semua fasilitas. Ruangan dilengkapi dengan semua instrumen dan mesin yang diperlukan.",
+            "reception-room": "Ruang Resepsi",
+            "reception-desc":
+              "Kami memiliki ruang resepsi yang dilengkapi dengan baik dengan semua fasilitas. Ruangan dilengkapi dengan semua instrumen dan mesin yang diperlukan.",
+            "medical-record": "Ruang Rekam Medis",
+            "medical-record-desc":
+              "Ruang rekam medis modern kami menggabungkan sistem penyimpanan digital dan fisik untuk mengelola informasi pasien dengan aman. Dengan protokol privasi yang ketat dan organisasi yang efisien, kami memastikan akses yang lancar ke riwayat medis untuk perawatan pasien yang terkoordinasi.",
+            "waiting-room": "Ruang Tunggu",
+            "waiting-desc":
+              "Ruang tunggu kami dirancang untuk kenyamanan, dengan tempat duduk yang luas, dekorasi yang menenangkan, dan fasilitas seperti Wi-Fi dan minuman. Kami memprioritaskan kenyamanan pasien saat mereka menunggu janji atau prosedur.",
+            laboratory: "Laboratorium",
+            "laboratory-desc":
+              "Laboratorium kami dilengkapi dengan alat diagnostik canggih dan dikelola oleh profesional yang terampil. Kami menawarkan berbagai macam tes, memastikan hasil yang akurat dan tepat waktu untuk perawatan pasien yang efektif.",
+            emergency: "Ruang Gawat Darurat",
+            "emergency-desc":
+              "Ruang gawat darurat kami dilengkapi untuk menangani situasi kritis dengan cepat dan presisi. Dikelola oleh profesional berpengalaman, kami memberikan perawatan segera dan intervensi penyelamat nyawa tingkat lanjut untuk semua keadaan darurat.",
+            pharmacy: "Apotek",
+            "pharmacy-desc":
+              "Apotek kami didedikasikan untuk menyediakan obat-obatan yang aman dan efektif. Dengan tim apoteker berlisensi, kami memastikan pemberian obat yang akurat, konseling pasien, dan manajemen pengobatan untuk hasil kesehatan yang optimal.",
+            parking: "Parkir Mobil dan Motor",
+            "parking-desc":
+              "Fasilitas kami menawarkan parkir mobil dan motor yang aman untuk pasien dan pengunjung. Dengan ruang yang luas dan langkah-langkah keamanan yang tersedia, kami memastikan ketenangan pikiran Anda saat Anda fokus pada kesehatan Anda.",
+            wifi: "Wi-Fi & TV Kabel Gratis",
+            "wifi-desc":
+              "Fasilitas kami menawarkan Wi-Fi dan TV kabel gratis untuk pasien dan pengunjung. Tetap terhubung dan terhibur selama kunjungan Anda, memastikan pengalaman yang nyaman dan menyenangkan.",
+            bathroom: "Kamar Mandi",
+            "bathroom-desc":
+              "Fasilitas kami memiliki kamar mandi yang bersih dan mudah diakses untuk kenyamanan pasien dan pengunjung kami. Dirancang dengan memperhatikan kebersihan dan kenyamanan, mereka memastikan pengalaman yang menyenangkan selama kunjungan Anda.",
+            mushalla: "Mushalla",
+            "mushalla-desc":
+              "Fasilitas kami mencakup mushalla khusus untuk sholat dan refleksi. Dirancang untuk memberikan lingkungan yang tenang, ini menawarkan ruang yang damai untuk praktik spiritual selama kunjungan Anda.",
+
+            // Services section
+            "services-heading": "layanan kami",
+            "service-title": "services",
+            "services-text":
+              "Kami menyediakan layanan kesehatan komprehensif yang disesuaikan untuk memenuhi kebutuhan Anda. Tim profesional kami berdedikasi untuk memberikan perawatan berkualitas dengan kasih sayang dan keahlian.",
+            gp: "Dokter Umum",
+            "gp-service1":
+              "Konsultasi, konseling, dan pemeriksaan kesehatan fisik umum",
+            "gp-service2":
+              "Vaksin (Vaksin wajib anak, HPV, Influenza, meningitis)",
+            "gp-service3": "Infus vitamin",
+            "gp-service4": "Gawat darurat",
+            "gp-service5": "Khitan",
+            specialists: "Spesialis",
+            "specialists-service1": "Internis",
+            "specialists-service2": "Neurolog",
+            "specialists-service3": "Perawatan primer untuk keluarga",
+            lab: "Laboratorium",
+            "lab-service1": "Hematologi Klinis",
+            "lab-service2": "Kimia klinis",
+            "lab-service3": "Tes darah lengkap",
+            "lab-service4": "Tes golongan darah",
+            "lab-service5": "Tes ESRD",
+            "lab-service6": "Skrining malaria",
+            "lab-service7": "Urinalisis",
+            "lab-service8": "Pemeriksaan tinja",
+            "lab-service9": "Skrining Tes Kehamilan",
+            "home-service": "Layanan Rumah",
+            "home-service1": "Dokter panggilan",
+            "home-service2": "Perawat panggilan",
+            apotek: "Apotek",
+            "apotek-service": "Pengkajian dan pelayanan resep",
+
+            // Contact section
+            "contact-heading": "hubungi kami",
+            "contact-title": "hubungi",
+            copyright:
+              "Hak Cipta © PT Hiyakari Bakti Utama. Seluruh hak dilindungi undang-undang.",
+          },
+        };
+
+        // Set default language
+        let currentLang = "en";
+
+        // Function to apply language
+        function applyLanguage(lang) {
+          currentLang = lang;
+
+          // Update all elements with data-lang-key attribute
+          document.querySelectorAll("[data-lang-key]").forEach((element) => {
+            const key = element.getAttribute("data-lang-key");
+            if (translations[lang][key]) {
+              if (key.includes("text")) {
+                // For longer text that might contain HTML
+                element.innerHTML = translations[lang][key];
+              } else {
+                element.textContent = translations[lang][key];
+              }
+            }
+          });
+
+          // Update specific elements that might need special handling
+          // For example, placeholder texts in forms, etc.
+        }
+
+        // Language button click handlers
+        const langBtns = document.querySelectorAll(".lang-btn");
+
+        langBtns.forEach((btn) => {
+          btn.addEventListener("click", function (e) {
+            e.preventDefault();
+
+            const lang = this.getAttribute("data-lang");
+
+            // Remove active class from all buttons
+            langBtns.forEach((b) => b.classList.remove("active"));
+            langBtns.forEach((b) => b.classList.remove("text-primary"));
+            langBtns.forEach((b) => b.classList.add("text-gray-500"));
+
+            // Add active class to clicked button
+            this.classList.add("active");
+            this.classList.add("text-primary");
+            this.classList.remove("text-gray-500");
+
+            // Apply the selected language
+            applyLanguage(lang);
+          });
+        });
+
+        // Apply default language (English)
+        applyLanguage("en");
+      });
+    </script>
   </body>
 </html>

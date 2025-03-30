@@ -35,3 +35,8 @@ const facilitiesSwiper = new Swiper(".facilitiesSwiper", {
 
 document.getElementById("copyright-year").textContent =
   new Date().getFullYear();
+
+document.querySelectorAll("place-name").forEach((element) => {
+  consolest.log(element);
+  element.textContent = "Eliksir Medika";
+});
