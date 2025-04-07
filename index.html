@@ -1017,7 +1017,7 @@
       </div>
     </section>
 
-    <section class="contact mb-10" id="contact">
+    <section class="contact mb-10 gap-10" id="contact">
       <div class="flex flex-col px-5 lg:grid grid-cols-2 w-full">
         <div
           class="relative flex flex-col justify-center wow animate__animated animate__fadeIn"
@@ -1075,7 +1075,127 @@
           ></iframe>
         </div>
       </div>
+
+      <!-- Contact Form -->
+      <div class="w-full px-4">
+        <!-- atau px-0 kalau bener-bener tanpa padding -->
+        <form
+          id="contactForm"
+          class="grid grid-cols-1 md:grid-cols-2 gap-6 w-full"
+        >
+          <!-- Your Name -->
+          <div>
+            <label
+              for="name"
+              class="block text-sm font-medium text-gray-700"
+              data-lang-key="contact-form-name"
+              >Your Name</label
+            >
+            <input
+              type="text"
+              id="name"
+              name="name"
+              required
+              class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-primary focus:border-primary"
+            />
+          </div>
+
+          <!-- Your Email -->
+          <div>
+            <label
+              for="email"
+              class="block text-sm font-medium text-gray-700"
+              data-lang-key="contact-form-email"
+              >Your Email</label
+            >
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-primary focus:border-primary"
+            />
+          </div>
+
+          <!-- Your Phone No. -->
+          <div>
+            <label
+              for="phone"
+              class="block text-sm font-medium text-gray-700"
+              data-lang-key="contact-form-phone"
+              >Your Phone No.</label
+            >
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              required
+              class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-primary focus:border-primary"
+            />
+          </div>
+
+          <!-- Company or Occupation -->
+          <div>
+            <label
+              for="company"
+              class="block text-sm font-medium text-gray-700"
+              data-lang-key="contact-form-company"
+              >Company or Occupation</label
+            >
+            <input
+              type="text"
+              id="company"
+              name="company"
+              required
+              class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-primary focus:border-primary"
+            />
+          </div>
+
+          <!-- Subject (Full width) -->
+          <div class="md:col-span-2">
+            <label for="subject" class="block text-sm font-medium text-gray-700"
+              >Subject</label
+            >
+            <input
+              type="text"
+              id="subject"
+              name="subject"
+              required
+              class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-primary focus:border-primary"
+            />
+          </div>
+
+          <!-- Message (Full width, bigger height) -->
+          <div class="md:col-span-2">
+            <label
+              for="message"
+              class="block text-sm font-medium text-gray-700"
+              data-lang-key="contact-form-message"
+              >Message</label
+            >
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              required
+              class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-primary focus:border-primary min-h-[120px]"
+            ></textarea>
+          </div>
+
+          <!-- Submit Button -->
+          <div class="md:col-span-2 flex justify-center">
+            <button
+              type="submit"
+              class="py-2 px-6 rounded-md text-white bg-primary hover:bg-primary-dark focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary"
+              data-lang-key="contact-form-submit"
+            >
+              Send Message/Register
+            </button>
+          </div>
+        </form>
+      </div>
     </section>
+
     <footer>
       <div class="bg-gray-700 text-center p-11">
         <p class="text-gray-100 text-xs sm:text-sm">
@@ -1203,6 +1323,13 @@
             // Contact section
             "contact-heading": "contact us",
             "contact-title": "contact",
+            "contact-form-title": "Send us a message",
+            "contact-form-name": "Your Name",
+            "contact-form-email": "Email",
+            "contact-form-phone": "Phone",
+            "contact-form-company": "Company",
+            "contact-form-message": "Message",
+            "contact-form-submit": "Send Message",
             copyright:
               "Copyright © PT Hiyakari Bakti Utama. All rights reserved.",
           },
@@ -1315,6 +1442,13 @@
             // Contact section
             "contact-heading": "hubungi kami",
             "contact-title": "hubungi",
+            "contact-form-title": "Kirimkan pesan kepada kami",
+            "contact-form-name": "Nama Anda",
+            "contact-form-email": "Email",
+            "contact-form-phone": "Telepon",
+            "contact-form-company": "Perusahaan",
+            "contact-form-message": "Pesan",
+            "contact-form-submit": "Kirim Pesan",
             copyright:
               "Hak Cipta © PT Hiyakari Bakti Utama. Seluruh hak dilindungi undang-undang.",
           },
@@ -1367,6 +1501,26 @@
         // Apply default language (English)
         applyLanguage("en");
       });
+
+      // Contact form submission functionality
+      document
+        .getElementById("contactForm")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+
+          const name = document.getElementById("name").value;
+          const email = document.getElementById("email").value;
+          const phone = document.getElementById("phone").value;
+          const company = document.getElementById("company").value;
+          const subject = document.getElementById("subject").value;
+          const message = document.getElementById("message").value;
+
+          const mailtoLink = `mailto:eliksirmedikka@gmail.com?subject=${encodeURIComponent(
+            subject
+          )}&body=Name: ${name}%0D%0A%0D%0AEmail: ${email}%0D%0A%0D%0APhone: ${phone}%0D%0A%0D%0ACompany: ${company}%0D%0A%0D%0AMessage:%0D%0A${message}`;
+
+          window.location.href = mailtoLink;
+        });
     </script>
   </body>
 </html>
