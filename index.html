@@ -259,7 +259,7 @@
           ></div>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 mt-10">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-10">
           <!-- Founder Card 1 -->
           <div class="wow animate__animated animate__fadeIn">
             <div class="bg-white rounded-lg shadow-lg overflow-hidden">
@@ -272,10 +272,7 @@
                 <h3 class="text-xl font-bold text-primary mt-4 text-center">
                   Luciana Dita
                 </h3>
-                <p class="text-gray-600 text-center">Founder</p>
-                <p class="text-sm text-gray-700 mt-4 text-center">
-                  Chief Executive Officer
-                </p>
+                <p class="text-gray-600 text-center">Chief Executive Officer</p>
               </div>
             </div>
           </div>
@@ -292,10 +289,24 @@
                 <h3 class="text-xl font-bold text-primary mt-4 text-center">
                   dr. Rizki Nasution
                 </h3>
-                <p class="text-gray-600 text-center">Co-Founder</p>
-                <p class="text-sm text-gray-700 mt-4 text-center">
-                  Chief Operation Officer
-                </p>
+                <p class="text-gray-600 text-center">Chief Operation Officer</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Founder Card 3 -->
+          <div class="wow animate__animated animate__fadeIn">
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+              <div class="p-4">
+                <img
+                  src="assets/images/delvia.webp"
+                  alt="Delvia Damayanti"
+                  class="w-80 h-80 object-cover mx-auto mt-16"
+                />
+                <h3 class="text-xl font-bold text-primary mt-4 text-center">
+                  Delvia Damayanti
+                </h3>
+                <p class="text-gray-600 text-center">Commissioner</p>
               </div>
             </div>
           </div>
@@ -733,14 +744,6 @@
                     >Circumcision</span
                   >
                 </li>
-                <li class="flex items-start mb-3">
-                  <span class="material-icons text-primary mr-2 text-sm"
-                    >check_circle</span
-                  >
-                  <span class="text-sm" data-lang-key="gp-service6">
-                    Medical check-up
-                  </span>
-                </li>
               </ul>
             </div>
           </div>
@@ -879,82 +882,135 @@
               </ul>
             </div>
           </div>
-
+          <!-- MCU Card -->
           <div
-            class="md:col-span-2 lg:col-span-3 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6"
+            class="service-card bg-white rounded-lg shadow-lg overflow-hidden wow animate__animated animate__fadeIn"
           >
-            <div class="lg:col-start-2">
-              <!-- Home Service Card -->
-              <div
-                class="service-card bg-white rounded-lg shadow-lg overflow-hidden wow animate__animated animate__fadeIn"
+            <div class="service-card-header bg-primary p-4 flex items-center">
+              <span class="material-icons text-white text-4xl mr-4"
+                >local_hospital</span
               >
-                <div
-                  class="service-card-header bg-primary p-4 flex items-center"
-                >
-                  <span class="material-icons text-white text-4xl mr-4"
-                    >home</span
-                  >
-                  <h3
-                    class="text-xl font-bold text-white"
-                    data-lang-key="home-service"
-                  >
-                    Home Service
-                  </h3>
-                </div>
-                <div class="service-card-body p-5">
-                  <ul class="service-list">
-                    <li class="flex items-start mb-3">
-                      <span class="material-icons text-primary mr-2 text-sm"
-                        >check_circle</span
-                      >
-                      <span class="text-sm" data-lang-key="home-service1"
-                        >Dokter panggilan</span
-                      >
-                    </li>
-                    <li class="flex items-start mb-3">
-                      <span class="material-icons text-primary mr-2 text-sm"
-                        >check_circle</span
-                      >
-                      <span class="text-sm" data-lang-key="home-service2"
-                        >Perawat panggilan</span
-                      >
-                    </li>
-                  </ul>
-                </div>
-              </div>
+              <h3
+                class="text-xl font-bold text-white"
+                data-lang-key="medical-checkup"
+              >
+                Medical Check Up
+              </h3>
             </div>
+            <div class="service-card-body p-5">
+              <ul class="service-list">
+                <li class="flex items-start mb-3">
+                  <span class="material-icons text-primary mr-2 text-sm"
+                    >check_circle</span
+                  >
 
-            <!-- Pharmacy Card -->
-            <div class="lg:col-start-3 md:col-start-2">
-              <div
-                class="service-card bg-white rounded-lg shadow-lg overflow-hidden wow animate__animated animate__fadeIn"
+                  <span class="text-sm" data-lang-key="mcu-service1"
+                    >Pemeriksaan Fisik Umum</span
+                  >
+                </li>
+
+                <li class="flex items-start mb-3">
+                  <span class="material-icons text-primary mr-2 text-sm"
+                    >check_circle</span
+                  >
+
+                  <span class="text-sm" data-lang-key="mcu-service2"
+                    >Tes Darah Lengkap</span
+                  >
+                </li>
+
+                <li class="flex items-start mb-3">
+                  <span class="material-icons text-primary mr-2 text-sm"
+                    >check_circle</span
+                  >
+
+                  <span class="text-sm" data-lang-key="mcu-service3"
+                    >Urinalisis (Pemeriksaan Urine)</span
+                  >
+                </li>
+
+                <li class="flex items-start mb-3">
+                  <span class="material-icons text-primary mr-2 text-sm"
+                    >check_circle</span
+                  >
+
+                  <span class="text-sm" data-lang-key="mcu-service4"
+                    >Rontgen Dada (Thorax)</span
+                  >
+                </li>
+
+                <li class="flex items-start mb-3">
+                  <span class="material-icons text-primary mr-2 text-sm"
+                    >check_circle</span
+                  >
+
+                  <span class="text-sm" data-lang-key="mcu-service5"
+                    >Elektrokardiogram (EKG)</span
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- Home Service Card -->
+          <div
+            class="service-card bg-white rounded-lg shadow-lg overflow-hidden wow animate__animated animate__fadeIn"
+          >
+            <div class="service-card-header bg-primary p-4 flex items-center">
+              <span class="material-icons text-white text-4xl mr-4"
+                >local_pharmacy</span
               >
-                <div
-                  class="service-card-header bg-primary p-4 flex items-center"
-                >
-                  <span class="material-icons text-white text-4xl mr-4"
-                    >medication</span
+              <h3
+                class="text-xl font-bold text-white"
+                data-lang-key="home-service"
+              >
+                Home Service
+              </h3>
+            </div>
+            <div class="service-card-body p-5">
+              <ul class="service-list">
+                <li class="flex items-start mb-3">
+                  <span class="material-icons text-primary mr-2 text-sm"
+                    >check_circle</span
                   >
-                  <h3
-                    class="text-xl font-bold text-white"
-                    data-lang-key="apotek"
+                  <span class="text-sm" data-lang-key="home-service1"
+                    >Dokter panggilan</span
                   >
-                    Apotek
-                  </h3>
-                </div>
-                <div class="service-card-body p-5">
-                  <ul class="service-list">
-                    <li class="flex items-start mb-3">
-                      <span class="material-icons text-primary mr-2 text-sm"
-                        >check_circle</span
-                      >
-                      <span class="text-sm" data-lang-key="apotek-service"
-                        >Pengkajian dan pelayanan resep</span
-                      >
-                    </li>
-                  </ul>
-                </div>
-              </div>
+                </li>
+                <li class="flex items-start mb-3">
+                  <span class="material-icons text-primary mr-2 text-sm"
+                    >check_circle</span
+                  >
+                  <span class="text-sm" data-lang-key="home-service2"
+                    >Perawat panggilan</span
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Pharmacy Card -->
+          <div
+            class="service-card bg-white rounded-lg shadow-lg overflow-hidden wow animate__animated animate__fadeIn"
+          >
+            <div class="service-card-header bg-primary p-4 flex items-center">
+              <span class="material-icons text-white text-4xl mr-4"
+                >medication</span
+              >
+              <h3 class="text-xl font-bold text-white" data-lang-key="apotek">
+                Apotek
+              </h3>
+            </div>
+            <div class="service-card-body p-5">
+              <ul class="service-list">
+                <li class="flex items-start mb-3">
+                  <span class="material-icons text-primary mr-2 text-sm"
+                    >check_circle</span
+                  >
+                  <span class="text-sm" data-lang-key="apotek-service"
+                    >Pengkajian dan pelayanan resep</span
+                  >
+                </li>
+              </ul>
             </div>
           </div>
         </div>
@@ -1117,7 +1173,7 @@
             "gp-service3": "Vitamin infusion",
             "gp-service4": "Emergency",
             "gp-service5": "Circumcision",
-            "gp-service6": "Medical check-up (MCU)",
+
             specialists: "Specialists",
             "specialists-service1": "Internist",
             "specialists-service2": "Neurologist",
@@ -1137,6 +1193,12 @@
             "home-service2": "On-call nurse",
             apotek: "Pharmacy",
             "apotek-service": "Prescription assessment and service",
+            "medical-checkup": "Medical Checkup",
+            "mcu-service1": "General Physical Examination",
+            "mcu-service2": "Complete Blood Test",
+            "mcu-service3": "Urinalysis (Urine Examination)",
+            "mcu-service4": "Chest X-ray (Thorax)",
+            "mcu-service5": "Electrocardiogram (ECG)",
 
             // Contact section
             "contact-heading": "contact us",
@@ -1223,7 +1285,7 @@
             "gp-service3": "Infus vitamin",
             "gp-service4": "Gawat darurat",
             "gp-service5": "Khitan",
-            "gp-service6": "Pemeriksaan kesehatan (MCU)",
+
             specialists: "Spesialis",
             "specialists-service1": "Internis",
             "specialists-service2": "Neurolog",
@@ -1243,6 +1305,12 @@
             "home-service2": "Perawat panggilan",
             apotek: "Apotek",
             "apotek-service": "Pengkajian dan pelayanan resep",
+            "medical-checkup": "Pemeriksaan Medis",
+            "mcu-service1": "Pemeriksaan Fisik Umum",
+            "mcu-service2": "Tes Darah Lengkap",
+            "mcu-service3": "Urinalisis (Pemeriksaan Urine)",
+            "mcu-service4": "Rontgen Dada (Thorax)",
+            "mcu-service5": "Elektrokardiogram (EKG)",
 
             // Contact section
             "contact-heading": "hubungi kami",
